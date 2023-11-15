@@ -1,11 +1,41 @@
-function ShowSlider() {
-    document.getElementById('slidertest').style.display="block"
-    document.getElementById('Home Page').style.display="none"
+function Home() {
+    document.getElementById('Home Page').style.display="block"
+    document.getElementById('Page2').style.display="none"
+    document.getElementById('Page3').style.display="none"
+    document.getElementById('Page4').style.display="none"
+    document.getElementById('slidertest').style.display="none"
 }
 
-function Home() {
+function Page2() {
+    document.getElementById('Home Page').style.display="none"
+    document.getElementById('Page2').style.display="block"
+    document.getElementById('Page3').style.display="none"
+    document.getElementById('Page4').style.display="none"
     document.getElementById('slidertest').style.display="none"
-    document.getElementById('Home Page').style.display="block"
+}
+
+function Page3() {
+    document.getElementById('Home Page').style.display="none"
+    document.getElementById('Page2').style.display="none"
+    document.getElementById('Page3').style.display="block"
+    document.getElementById('Page4').style.display="none"
+    document.getElementById('slidertest').style.display="none"
+}
+
+function Page4() {
+    document.getElementById('Home Page').style.display="none"
+    document.getElementById('Page2').style.display="none"
+    document.getElementById('Page3').style.display="none"
+    document.getElementById('Page4').style.display="block"
+    document.getElementById('slidertest').style.display="none"
+}
+
+function ShowSlider() {
+    document.getElementById('Home Page').style.display="none"
+    document.getElementById('Page2').style.display="none"
+    document.getElementById('Page3').style.display="none"
+    document.getElementById('Page4').style.display="none"
+    document.getElementById('slidertest').style.display="block"
 }
 
 
@@ -25,3 +55,18 @@ function activeLink() {
 }
 list.forEach((item) =>
 item.addEventListener('click',activeLink))
+
+
+var swiper = new Swiper(".slidecontent", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

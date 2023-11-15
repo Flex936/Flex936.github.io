@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
     <title>Teko</title>
 </head>
 <body>
@@ -16,22 +17,22 @@
                     <span class="text">Home</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" onclick="Page2()">
                 <a href="#">
                     <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                    <span class="text">Képzések</span>
+                    <span class="text">Page2</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" onclick="Page3()">
                 <a href="#">
                     <span class="icon"><ion-icon name="map-outline"></ion-icon></span>
-                    <span class="text">Helységek</span>
+                    <span class="text">Page3</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" onclick="Page4()">
                 <a href="#">
                     <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
-                    <span class="text">Tevékenységek</span>
+                    <span class="text">Page4</span>
                 </a>
             </li>
             <li class="list" onclick="ShowSlider()">
@@ -45,11 +46,36 @@
     <section id="Home Page" style="display: block;">
         this is a home page
     </section>
-    <section id="slidertest" style="display: none; transition: 0.5s;">
-        asdfsdafsadfsdfdsfsdafsdfasfdsafds
+    <section id="Page2" style="display: none;">
+        this is page 2
     </section>
+    <section id="Page3" style="display: none;">
+        this is page 3
+    </section>
+    <section id="Page4" style="display: none;">
+        this is page 4
+    </section>
+    <section id="slidertest" style="display: none;">
+        <div class="swiper mySwiper">
+            <div class="slidecontent">
+                <div class="img_cont swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="xeno.png" alt="xeno1">
+                        <img src="xeno.jpg" alt="xeno2">
+                        <img src="xenno.jpg" alt="xeno3">
+                        <img src="zeno.jpg" alt="xeno4">
+                        <img src="hq_alien.jpg" alt="xeno5">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div> 
+    </section>
+</body>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script src="swiper.js"></script>
 </html>

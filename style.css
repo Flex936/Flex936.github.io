@@ -9,15 +9,6 @@ body {
     color: rgb(8, 51, 38);
 }
 
-#slidertest::before {
-    opacity: 0;
-    transition: 0.6s;
-}
-
-#slidertest::after {
-    opacity: 100;
-}
-
 .list {
     transition: 0.6s;
 }
@@ -160,4 +151,19 @@ body {
     transform: translateY(8px);
     transition: 0.6s;
     box-shadow: 0 -8px 0 rgb(74, 150, 51);
+}
+
+
+img {
+    width: 450px;
+    height: 250px;
+    border: 2px solid red;
+}
+
+.img_cont {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
