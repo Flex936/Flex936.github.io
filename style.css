@@ -103,7 +103,7 @@ body {
 }
 
 .nav.open {
-    width: 300px;
+    width: 230px;
 }
 
 .nav.open .nav_tog::before {
