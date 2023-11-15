@@ -10,7 +10,7 @@
     <div class="nav">
         <div class="nav_tog"></div>
         <ul>
-            <li class="list">
+            <li class="list active" onclick="Home()">
                 <a href="#">
                     <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                     <span class="text">Home</span>
@@ -34,8 +34,20 @@
                     <span class="text">Tevékenységek</span>
                 </a>
             </li>
+            <li class="list" onclick="ShowSlider()">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                    <span class="text">Slider Testing</span>
+                </a>
+            </li>
         </ul>
     </div>
+    <section id="Home Page" style="display: block;">
+        this is a home page
+    </section>
+    <section id="slidertest" style="display: none; transition: 0.5s;">
+        asdfsdafsadfsdfdsfsdafsdfasfdsafds
+    </section>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

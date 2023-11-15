@@ -1,3 +1,14 @@
+function ShowSlider() {
+    document.getElementById('slidertest').style.display="block"
+    document.getElementById('Home Page').style.display="none"
+}
+
+function Home() {
+    document.getElementById('slidertest').style.display="none"
+    document.getElementById('Home Page').style.display="block"
+}
+
+
 const nav = document.querySelector('.nav');
 const nav_tog = document.querySelector('.nav_tog');
 

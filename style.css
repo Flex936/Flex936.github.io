@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: rgb(37, 52, 66);
-    color: rgb(32, 200, 150);
+    background-color: rgb(228, 201, 128);
+    color: rgb(8, 51, 38);
+}
+
+#slidertest::before {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#slidertest::after {
+    opacity: 100;
 }
 
 .list {
@@ -60,11 +70,11 @@ body {
     transition: 0.6s;
     border-radius: 10px;
     font-size: 1.75em;
-    color: rgb(244, 203, 154);
+    color: rgb(74, 150, 51);
 }
 
 .nav ul li.active a .icon {
-    background-color: rgb(244, 203, 154);
+    background-color: rgb(74, 150, 51);
     color: black;
 }
 
@@ -73,10 +83,10 @@ body {
     position: absolute;
     top: 3px;
     left: 0;
-    width: 100%;
+    width: 110%;
     height: 100%;
-    background-color: rgb(244, 203, 154);
-    filter: blur(10px);
+    background-color: rgb(83, 197, 49);
+    filter: blur(15px);
     opacity: 0;
     transition: 0.6s;
 }
@@ -86,12 +96,13 @@ body {
 }
 
 .nav ul li a .text {
+    font-style: bold;
     position: relative;
     padding: 15px;
     height: 60px;
     display: flex;
     align-items: center;
-    color: rgb(255, 184, 97);
+    color: rgb(23, 133, 23);
     opacity: 0;
     visibility: hidden;
     transition: 0.6s;
@@ -112,7 +123,7 @@ body {
 
 .nav.open .nav_tog::after {
     transform: translateY(0px) rotate(-45deg);
-    box-shadow: 0 0 0 rgb(244, 203, 154);
+    box-shadow: 0 0 0 rgb(74, 150, 51);
 }
 
 .nav .nav_tog {
@@ -135,7 +146,7 @@ body {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: rgb(244, 203, 154);
+    background-color: rgb(74, 150, 51);
     transform: translateY(-8px);
     transition: 0.6s;
 }
@@ -145,8 +156,8 @@ body {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: rgb(244, 203, 154);
+    background-color: rgb(74, 150, 51);
     transform: translateY(8px);
     transition: 0.6s;
-    box-shadow: 0 -8px 0 rgb(244, 203, 154);
+    box-shadow: 0 -8px 0 rgb(74, 150, 51);
 }
