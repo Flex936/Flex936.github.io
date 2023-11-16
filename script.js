@@ -57,7 +57,7 @@ list.forEach((item) =>
 item.addEventListener('click',activeLink))
 
 
-var swiper = new Swiper(".slidecontent", {
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,

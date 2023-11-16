@@ -167,3 +167,10 @@ img {
     align-items: center;
     gap: 100px;
 }
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
