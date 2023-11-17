@@ -57,10 +57,13 @@ list.forEach((item) =>
 item.addEventListener('click',activeLink))
 
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySlider", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+        delay: 3000,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
