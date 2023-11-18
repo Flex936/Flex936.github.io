@@ -87,9 +87,11 @@ video {
 
 .nav ul li a .icon {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 12vw;
-    height: 5vh;
+    height: 7vh;
     line-height: 13vh;
     transition: 0.6s;
     border-radius: 10px;
@@ -107,7 +109,7 @@ video {
     position: absolute;
     top: 3px;
     left: 0;
-    width: 110%;
+    width: 100%;
     height: 100%;
     background-color: rgb(83, 197, 49);
     filter: blur(15px);
@@ -133,12 +135,13 @@ video {
 }
 
 .nav.open ul li a .text {
+    transition-delay: 0.35s;
     opacity: 1;
     visibility: visible;
 }
 
 .nav.open {
-    width: 230px;
+    width: 50vw;
 }
 
 .nav.open .nav_tog::before {
@@ -162,28 +165,28 @@ video {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 4.5vw;
+    padding: 25%;
 }
 
 .nav .nav_tog::before {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 6vw;
+    height: 0.3vh;
     background-color: rgb(74, 150, 51);
-    transform: translateY(-8px);
+    transform: translateY(-0.8vh);
     transition: 0.6s;
 }
 
 .nav .nav_tog::after {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 6vw;
+    height: 0.3vh;
     background-color: rgb(74, 150, 51);
-    transform: translateY(8px);
+    transform: translateY(0.8vh);
     transition: 0.6s;
-    box-shadow: 0 -8px 0 rgb(74, 150, 51);
+    box-shadow: 0 -0.8vh 0 rgb(74, 150, 51);
 }
 
 
@@ -225,6 +228,10 @@ video {
         width: 75px;
     }
 
+    .nav.open {
+        width: 300px;
+    }
+
     .nav ul {
         gap: 60px;
         max-height: 50vh;
@@ -243,5 +250,18 @@ video {
 
     .nav .nav_tog {
         padding: 22.5px;
+    }
+
+    .nav .nav_tog::before {
+        width: 30px;
+        height: 2px;
+        transform: translateY(-8px);
+    }
+
+    .nav .nav_tog::after {
+        width: 30px;
+        height: 2px;
+        transform: translateY(-8px);
+        box-shadow: 0 -8px 0 rgb(74, 150, 51);
     }
 }
