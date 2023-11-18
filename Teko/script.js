@@ -66,6 +66,7 @@ const swiper = new Swiper(".mySlider", {
     },
     pagination: {
       el: ".swiper-pagination",
+      dynamicBullets: true,
       clickable: true,
     },
     navigation: {
