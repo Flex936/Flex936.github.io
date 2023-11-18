@@ -12,6 +12,7 @@ body {
 
 section {
     margin-left: 20vh;
+    margin-right: 8vh;
     margin-top: 10vh;
     border-left: 2.5px solid rgb(119, 119, 119);
     border-radius: 1px;
@@ -24,6 +25,10 @@ div {
     padding: 10px;
 }
 
+video {
+    z-index: 1;
+}
+
 
 
 .list {
@@ -31,6 +36,7 @@ div {
 }
 
 .nav {
+    z-index: 2  ;
     top: 0px;
     position: fixed;
     height: 100%;
@@ -45,7 +51,7 @@ div {
 .nav ul {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 8vh;
     width: 100%;
     max-height: 50vh;
 }
@@ -54,13 +60,13 @@ div {
     list-style: none;
     position: relative;
     width: 100%;
-    height: 60px;
-    padding: 10px;
+    height: 5vh;
+    padding: 12%;
     transition: 0.6s;
 }
 
 .nav ul li.active {
-    transform: translateX(3px);
+    transform: translateX(0.3vw);
 }
 
 .nav ul li a {
@@ -75,12 +81,12 @@ div {
 .nav ul li a .icon {
     position: relative;
     display: block;
-    min-width: 55px;
-    height: 55px;
-    line-height: 60px;
+    min-width: 12vw;
+    height: 12vh;
+    line-height: 13vh;
     transition: 0.6s;
     border-radius: 10px;
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: rgb(74, 150, 51);
 }
 
@@ -205,10 +211,19 @@ div {
     }
 
     section {
-        margin-left: 250px;
-        margin-top: 100px;
-        border-left: 2.5px solid rgb(119, 119, 119);
-        border-radius: 1px;
-        padding-left: 10px;
+        margin-left: 10vw;
+        margin-right: 8vw;
+        margin-top: 6vh;
+    }
+
+    .nav ul {
+        gap: 60px;
+    }
+
+    .nav ul li a .icon {
+        min-width: 55px;
+        height: 55px;
+        line-height: 60px;
+        font-size: 1.7em;
     }
 }
