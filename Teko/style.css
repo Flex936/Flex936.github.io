@@ -10,22 +10,33 @@ body {
 }
 
 section {
-    margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 30vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
     border-left: 2.5px solid rgb(119, 119, 119);
     border-radius: 1px;
-    padding-left: 10px;
+    padding-left: 2vh;
 }
+
+div {
+    background-color: rgb(18, 100, 18);
+    margin-bottom: 1vh;
+    padding: 5vh;
+    color: rgb(255, 255, 255);
+}
+
+
 
 
 .list {
     transition: 0.6s;
 }
+
 .nav {
     top: 0px;
     position: fixed;
     height: 100%;
-    width: 75px;
+    width: 4.5vw;
     background-color: black;
     transition: 0.6s;
     display: flex;
@@ -36,7 +47,7 @@ section {
 .nav ul {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 7vh;
     width: 100%;
 }
 
@@ -44,13 +55,13 @@ section {
     list-style: none;
     position: relative;
     width: 100%;
-    height: 60px;
-    padding: 10px;
+    height: 10vh;
+    padding: 0.6vw;
     transition: 0.6s;
 }
 
 .nav ul li.active {
-    transform: translateX(3px);
+    transform: translateX(0.2vw);
 }
 
 .nav ul li a {
@@ -65,12 +76,12 @@ section {
 .nav ul li a .icon {
     position: relative;
     display: block;
-    min-width: 55px;
-    height: 55px;
-    line-height: 60px;
+    min-width: 3.3vw;
+    height: 6.5vh;
+    line-height: 7vh;
     transition: 0.6s;
-    border-radius: 10px;
-    font-size: 1.75em;
+    border-radius: 0.5vw;
+    font-size: 1.8vw;
     color: rgb(74, 150, 51);
 }
 
@@ -82,9 +93,9 @@ section {
 .nav ul li a .icon::before {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 0.6vh;
     left: 0;
-    width: 110%;
+    width: 100%;
     height: 100%;
     background-color: rgb(83, 197, 49);
     filter: blur(15px);
@@ -99,8 +110,8 @@ section {
 .nav ul li a .text {
     font-style: bold;
     position: relative;
-    padding: 15px;
-    height: 60px;
+    padding: 1.5vw;
+    height: 5vh;
     display: flex;
     align-items: center;
     color: rgb(23, 133, 23);
@@ -115,7 +126,7 @@ section {
 }
 
 .nav.open {
-    width: 230px;
+    width: 13.5vw;
 }
 
 .nav.open .nav_tog::before {
@@ -138,29 +149,29 @@ section {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 22.5px;
+    justify-content: center;
+    padding: 3vh;
 }
 
 .nav .nav_tog::before {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 1.8vw;
+    height: 0.1vw;
     background-color: rgb(74, 150, 51);
-    transform: translateY(-8px);
+    transform: translateY(-0.9vh);
     transition: 0.6s;
 }
 
 .nav .nav_tog::after {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 1.8vw;
+    height: 0.1vw;
     background-color: rgb(74, 150, 51);
-    transform: translateY(8px);
+    transform: translateY(0.9vh);
     transition: 0.6s;
-    box-shadow: 0 -8px 0 rgb(74, 150, 51);
+    box-shadow: 0 -0.9vh 0 rgb(74, 150, 51);
 }
 
 
