@@ -115,8 +115,8 @@ video {
 .nav ul li a .text {
     font-style: bold;
     position: relative;
-    padding: 15px;
-    height: 60px;
+    padding: 1vw;
+    height: 5vh;
     display: flex;
     align-items: center;
     color: rgb(23, 133, 23);
