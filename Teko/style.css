@@ -11,11 +11,11 @@ body {
 }
 
 section {
-    margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 20vh;
+    margin-top: 10vh;
     border-left: 2.5px solid rgb(119, 119, 119);
     border-radius: 1px;
-    padding-left: 10px;
+    padding-left: 1vw;
 }
 
 div {
@@ -34,7 +34,7 @@ div {
     top: 0px;
     position: fixed;
     height: 100%;
-    width: 40px;
+    width: 15vw;
     background-color: black;
     transition: 0.6s;
     display: flex;
@@ -202,5 +202,13 @@ div {
 @media only screen and (min-width: 768px) {
     .nav {
     width: 75px;
+    }
+
+    section {
+        margin-left: 250px;
+        margin-top: 100px;
+        border-left: 2.5px solid rgb(119, 119, 119);
+        border-radius: 1px;
+        padding-left: 10px;
     }
 }
