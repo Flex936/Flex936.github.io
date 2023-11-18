@@ -37,6 +37,7 @@ video {
 }
 
 .nav {
+    overflow: scroll;
     z-index: 2  ;
     top: 0px;
     position: fixed;
@@ -49,9 +50,14 @@ video {
     align-items: center;
 }
 
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
 .nav ul {
     display: flex;
     flex-direction: column;
+    min-height: auto;
     gap: 8vh;
     width: 100%;
 }
