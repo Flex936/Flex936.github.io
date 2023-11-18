@@ -11,12 +11,13 @@ body {
 }
 
 section {
-    margin-left: 20vh;
+    margin-left: 5vh;
     margin-right: 8vh;
     margin-top: 10vh;
     border-left: 2.5px solid rgb(119, 119, 119);
     border-radius: 1px;
     padding-left: 1vw;
+    font-size: 0.5em;
 }
 
 div {
@@ -58,7 +59,7 @@ video {
 .nav ul {
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 100svh;
     gap: 8vh;
     width: 100%;
 }
@@ -164,8 +165,7 @@ video {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 25% 25% 25% 25%;
+    justify-content: center;
 }
 
 .nav .nav_tog::before {
@@ -221,6 +221,11 @@ video {
         margin-left: 10vw;
         margin-right: 8vw;
         margin-top: 6vh;
+        font-size: 1em;
+    }
+
+    div {
+        font-style: 1em;
     }
 
 
@@ -235,6 +240,7 @@ video {
     .nav ul {
         gap: 60px;
         max-height: 50vh;
+        min-height: auto;
     }
 
     .nav ul li {
