@@ -97,7 +97,7 @@ span.before {
 
 span.after {
     margin-left: 10vw;
-    margin-right: 15vw;
+    margin-right: 25vw;
     position: relative;
     width: 2vw;
     height: 0.3vh;
@@ -341,13 +341,13 @@ span.after {
     }
     
     span.before {
-        margin-right: 20%;
-        margin-left: 15%;
+        margin-right: 15%;
+        margin-left: 25%;
         height: 0.3vh;
     }
     
     span.after {
-        margin-left: 20%;
+        margin-left: 15%;
         margin-right: 25%;
         height: 0.3vh;
     }
