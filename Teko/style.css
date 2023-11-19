@@ -49,6 +49,7 @@ source {
 
 
 
+
 .title {
     background-color: rgb(10, 68, 10);
     margin-bottom: 4px;
@@ -220,9 +221,8 @@ source {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 500px;
-    border: 1px solid red;
+    max-width: 50%;
+    max-height: 100%;
 }
 
 .swiper-slide {
@@ -231,13 +231,22 @@ source {
     align-items: center;
 }
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
-    width: 450px;
-    height: 300px;
     object-fit: cover;
 }
 
+.swiper-pagination-bullet {
+    background-color: #00FF6F !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #45E98C !important;
+}
+
+.nodiv {
+    background-color: transparent;
+}
 
 
 

@@ -62,7 +62,7 @@ const swiper = new Swiper(".mySlider", {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 5000,
     },
     pagination: {
       el: ".swiper-pagination",
