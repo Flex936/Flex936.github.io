@@ -214,6 +214,7 @@ span.after {
 }
 
 .nav ul li a .text {
+    padding-right: 3px;
     font-style: bold;
     position: relative;
     padding: 1vw;
@@ -362,7 +363,7 @@ span.after {
     }
 
     .nav.open {
-        width: 300px;
+        width: 350px;
     }
 
     .nav ul {
