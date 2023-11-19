@@ -3,7 +3,6 @@ function Home() {
     document.getElementById('Page2').style.display="none"
     document.getElementById('Page3').style.display="none"
     document.getElementById('Page4').style.display="none"
-    document.getElementById('slidertest').style.display="none"
 }
 
 function Page2() {
@@ -11,7 +10,6 @@ function Page2() {
     document.getElementById('Page2').style.display="block"
     document.getElementById('Page3').style.display="none"
     document.getElementById('Page4').style.display="none"
-    document.getElementById('slidertest').style.display="none"
 }
 
 function Page3() {
@@ -19,7 +17,6 @@ function Page3() {
     document.getElementById('Page2').style.display="none"
     document.getElementById('Page3').style.display="block"
     document.getElementById('Page4').style.display="none"
-    document.getElementById('slidertest').style.display="none"
 }
 
 function Page4() {
@@ -27,7 +24,6 @@ function Page4() {
     document.getElementById('Page2').style.display="none"
     document.getElementById('Page3').style.display="none"
     document.getElementById('Page4').style.display="block"
-    document.getElementById('slidertest').style.display="none"
 }
 
 function ShowSlider() {
@@ -35,7 +31,6 @@ function ShowSlider() {
     document.getElementById('Page2').style.display="none"
     document.getElementById('Page3').style.display="none"
     document.getElementById('Page4').style.display="none"
-    document.getElementById('slidertest').style.display="block"
 }
 
 
