@@ -22,17 +22,29 @@ section {
 
 div {
     background-color: rgb(17, 92, 17);
-    color: white;
+    color: rgb(228, 188, 97);
     padding: 10px;
+    margin-bottom: 2px;
 }
 
 video {
     z-index: 1;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 200px;
 }
 
 
+
+
+.title {
+    background-color: rgb(10, 68, 10);
+    margin-bottom: 4px;
+}
+
+.full {
+    color: red;
+    font-weight: bold;
+}
 
 .list {
     transition: 0.6s;
@@ -227,6 +239,10 @@ video {
 
     div {
         font-style: 1em;
+    }
+
+    video {
+        max-height: 400px;
     }
 
 
