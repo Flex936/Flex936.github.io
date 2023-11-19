@@ -131,9 +131,9 @@ span.after {
 .nav {
     top: 0px;
     position: fixed;
-    height: 100lvh;
+    height: 100%;
     width: 15vw;
-    padding-bottom: 10%;
+    padding-top: 10vh;
     background-color: black;
     transition: 0.6s;
     display: flex;
