@@ -133,7 +133,7 @@ span.after {
     position: fixed;
     height: 100%;
     width: 15vw;
-    padding-top: 10vh;
+    padding-top: 8vh;
     background-color: black;
     transition: 0.6s;
     display: flex;
