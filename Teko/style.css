@@ -48,6 +48,11 @@ video {
     max-height: 200px;
 }
 
+div.video {
+    display: flex;
+    justify-content: center;
+}
+
 source {
     max-width: 100%;
     max-height: 200px;
