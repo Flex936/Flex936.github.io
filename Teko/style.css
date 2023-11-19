@@ -148,6 +148,7 @@ span.after {
 }
 
 .nav ul {
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     min-height: 40svh;
