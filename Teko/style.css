@@ -84,6 +84,7 @@ footer {
 }
 
 span.before {
+    content: 'asd';
     margin-right: 10vw;
     margin-left: 25vw;
     position: relative;
@@ -96,6 +97,7 @@ span.before {
 }
 
 span.after {
+    content: 'asd';
     margin-left: 10vw;
     margin-right: 25vw;
     position: relative;
