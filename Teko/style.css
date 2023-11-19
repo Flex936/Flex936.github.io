@@ -74,13 +74,13 @@ footer {
     color: rgb(74, 150, 51);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     z-index: 2;
 }
 
 span.before {
-    margin-right: 20%;
-    margin-left: 15%;
+    margin-right: 10vw;
+    margin-left: 25vw;
     position: relative;
     width: 2vw;
     height: 0.3vh;
@@ -91,8 +91,8 @@ span.before {
 }
 
 span.after {
-    margin-left: 20%;
-    margin-right: 25%;
+    margin-left: 10vw;
+    margin-right: 15vw;
     position: relative;
     width: 2vw;
     height: 0.3vh;
@@ -280,7 +280,7 @@ span.after {
     justify-content: center;
     align-items: center;
     width: 60vw;
-    height: 20vh;
+    height: 23vh;
 }
 
 .swiper-slide {
@@ -334,6 +334,21 @@ span.after {
     p {
         margin-bottom: 3px;
     }
+    
+    span.before {
+        margin-right: 20%;
+        margin-left: 15%;
+        height: 0.3vh;
+    }
+    
+    span.after {
+        margin-left: 20%;
+        margin-right: 25%;
+        height: 0.3vh;
+    }
+
+
+
 
     .nav {
         width: 75px;
