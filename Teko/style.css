@@ -133,7 +133,7 @@ span.after {
     position: fixed;
     height: 100%;
     width: 15vw;
-    padding-top: 8vh;
+    padding-top: 6.5vh;
     background-color: black;
     transition: 0.6s;
     display: flex;
@@ -360,7 +360,6 @@ span.after {
 
 
     .nav {
-        height: 100%;
         width: 75px;
     }
 
