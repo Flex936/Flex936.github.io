@@ -60,7 +60,7 @@ video {
 .nav ul {
     display: flex;
     flex-direction: column;
-    min-height: 100svh;
+    min-height: 40svh;
     gap: 8vh;
     width: 100%;
 }
