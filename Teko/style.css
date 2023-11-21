@@ -129,6 +129,7 @@ span.after {
 nav ul:last-child {
     display: flex;
     align-items: flex-end;
+    max-height: 100svh;
 }
 
 .nav {
