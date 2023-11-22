@@ -1,0 +1,78 @@
+body {
+    background-image: url(alienbg-transformed_cleanup.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: #09a873;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+header{
+    top: 0px;
+    background-image: url(eso1132e.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    color: #7d12f7;
+}
+
+.active{
+    background-color: #046846;
+}
+
+.non-active{
+    background-color: #11091d;
+}
+
+.non-active:hover{
+    background-color: #2a1050;
+}
+
+h2{
+    color: rgba(122, 118, 230, 0.713);
+}
+
+.dont{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+
+.menu{
+    text-decoration: none;
+}
+
+.menuactive{
+    text-decoration: none;
+    color: rgba(91, 46, 136, 0.857);
+}
+
+.links{
+    text-decoration-color: rgba(0, 86, 75, 0.825);
+    color: #006377;
+}
+
+.links:hover{
+    color: #05839c;
+}
+
+.topnav{
+    overflow: hidden;
+}
+
+footer{
+    background-color: rgb(13, 17, 16);
+    color: #065c3f;
+    width: 100%;
+    height: 3%;
+    bottom: 0;
+    position: fixed;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: #662c2c;
+}
+
+.footerlink:hover{
+    color: #803232;
+}
