@@ -1,0 +1,27 @@
+body {
+    background-image: url(snapedit_1696926404064.png);
+    background-size: cover;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 30px;
+    font-family: Impact;
+    left: 10%;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: rgba(0, 0, 0, 0.842);
+    background-color: rgb(255, 231, 179);
+}
+
+table {
+    bottom: 26%;
+    left: 10%;
+    position: absolute;
+}
