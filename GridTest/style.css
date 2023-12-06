@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1em;
+    background-image: url(winterbg.jpg);
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+    background-color: rgb(0, 194, 194);
+    color: white;
+}
+
+.nav .nav-buttons {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+button {
+    border: none;
+    background-color: rgb(0, 194, 194);
+    color: rgb(51, 122, 133);
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    font-size: 1em;
+    width: 200px;
+}
+
+button:hover {
+    color: rgb(29, 76, 85);
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    color: rgb(188, 255, 249);
+    margin-top: 5%;
+    justify-content: center;
+    column-gap: 3%;
+}
+
+.grid-container div {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.550);
+}
