@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(27, 26, 26);
+    color: orange;
+    margin: 50px;
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(77, 59, 217);
+}
