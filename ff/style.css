@@ -22,6 +22,10 @@ button{
     font-weight: bold;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 section{
     margin: 50px;
     grid-template-columns: auto auto auto auto;
@@ -31,14 +35,14 @@ section{
 
 a{
     position: relative;
+    bottom: 0px;
     aspect-ratio: 16/9;
     transition: ease-out 0.3s;
-    box-shadow: inset 0 0 0 0 orange;
     height: 220px;
 }
 
 a:hover{
-    box-shadow: inset 380px 0 0 0 orange;
+    bottom: 5px;
 }
 
 #backgroundIMG{
