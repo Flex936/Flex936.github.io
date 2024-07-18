@@ -1,21 +1,65 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
 
-body {
+body{
     background-color: rgb(27, 26, 26);
     color: orange;
-    margin: 50px;
 }
 
-p {
-    margin-top: 10px;
-    margin-left: 20px;
+menu{
+    display: flex;
 }
 
-a {
+button{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    height: 5vh;
+    border: none;
+    color: orange;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+section{
+    padding: 50px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 50px;
+    justify-items: center;
+}
+
+div{
+    position: relative;
+}
+
+#backgroundIMG{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(144, 93, 0);
+}
+
+#pfpIMG{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 30px;
+    bottom: 30px;
+    border: 5px solid rgb(39, 0, 124);
+    border-radius: 50%;
+}
+
+#Name{
     font-weight: bold;
     text-decoration: none;
     color: rgb(77, 59, 217);
+    font-size: 1.5em;
+    position: absolute;
+    left: 170px;
+    bottom: 40px;
 }
