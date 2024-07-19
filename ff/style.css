@@ -9,12 +9,11 @@ body{
 }
 
 menu{
-    width: 100%;
     display: flex;
 }
 
 button{
-    width: 100%;
+    width: 100lvw;
     padding: 7px;
     font-size: 120%;
     font-weight: bold;
@@ -33,8 +32,7 @@ pages{
 }
 
 section{
-    padding-top: 40px;
-    padding-bottom: 60px;
+    margin: 50px;
     grid-template-columns: auto auto auto auto;
     column-gap: 20px;
     row-gap: 60px;
@@ -42,7 +40,6 @@ section{
 
 a{
     position: relative;
-    height: 220px;
     bottom: 0px;
     transition: ease-out 0.3s;
 }
@@ -52,7 +49,7 @@ a:hover{
 }
 
 #backgroundIMG{
-    height: 100%;
+    height: 220px;
     border: 1px solid rgb(144, 93, 0);
 }
 
