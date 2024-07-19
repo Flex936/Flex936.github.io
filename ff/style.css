@@ -55,7 +55,7 @@ a:hover{
 
 #pfpIMG{
     position: absolute;
-    left: 20px;
+    left: 5%;
     bottom: -30px;
     border: 5px solid rgb(48, 0, 152);
     border-radius: 50%;
@@ -66,17 +66,31 @@ a:hover{
     position: absolute;
     left: 52%;
     bottom: 20px;
-    font-size: 130%;
+    font-size: 140%;
     font-weight: bold;
     text-decoration: none;
     color: rgb(77, 59, 217);
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
+
+    section{
+        grid-template-columns: auto auto;
+    }
+
+    #backgroundIMG{
+        height: 180px;
+    }
+    
+    #Name{
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 500px) {
 
     section{
         grid-template-columns: auto;
-        column-gap: 0;
     }
 
     #backgroundIMG{
