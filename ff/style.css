@@ -15,31 +15,36 @@ menu{
 
 button{
     width: 100%;
-    background-color: rgb(20, 20, 20);
-    height: 35px;
-    border: none;
-    color: orange;
+    padding: 7px;
     font-size: 120%;
     font-weight: bold;
+    border: none;
+    background-color: rgb(20, 20, 20);
+    color: orange;
 }
 
 button:hover{
     cursor: pointer;
 }
 
+pages{
+    display: flex;
+    justify-content: center;
+}
+
 section{
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     grid-template-columns: auto auto auto auto;
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 60px;
 }
 
 a{
     position: relative;
-    bottom: 0px;
-    aspect-ratio: 16/9;
-    transition: ease-out 0.3s;
     height: 220px;
+    bottom: 0px;
+    transition: ease-out 0.3s;
 }
 
 a:hover{
@@ -63,16 +68,13 @@ a:hover{
     font-weight: bold;
     text-decoration: none;
     color: rgb(77, 59, 217);
-    font-size: 150%;
+    font-size: 130%;
     position: absolute;
     left: 190px;
     bottom: 20px;
 }
 
 @media (max-width: 999px) {
-    a{
-        aspect-ratio: 9/16;
-    }
 
     section{
         grid-template-columns: auto;
