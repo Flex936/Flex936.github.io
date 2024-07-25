@@ -1,5 +1,5 @@
-const listSections=[document.getElementById('PornHub'),document.getElementById("Artists"), document.getElementById("HanimeTV"), document.getElementById("Sites")]
-const listButton=[document.getElementById('PHB'),document.getElementById("ASB"), document.getElementById("HTVB"), document.getElementById("SB")]
+const listSections=[document.getElementById('PornHub'),document.getElementById("Leaks"),document.getElementById("HanimeTV"),document.getElementById("Artists"),document.getElementById("Sites")]
+const listButton=[document.getElementById('PHB'),document.getElementById("LSB"),document.getElementById("HTVB"),document.getElementById("ASB"),document.getElementById("SSB")]
 
 function buttonClick(clicked_id) {
     for (let i=0; i < listButton.length;i++){

@@ -56,8 +56,16 @@ section#PornHub #backgroundIMG{
     border: 1px solid rgb(144, 93, 0);
 }
 
+section#Leaks #backgroundIMG{
+    border: 1px solid rgb(222, 17, 171);
+}
+
 section#HanimeTV #backgroundIMG{
     border: 1px solid rgb(80, 80, 80);
+}
+
+section#Artists #backgroundIMG{
+    border: 1px solid rgb(13, 91, 79);
 }
 
 #pfpIMG{
@@ -72,12 +80,20 @@ section#PornHub #pfpIMG{
     border: 5px solid rgb(48, 0, 152);
 }
 
+section#Leaks #pfpIMG{
+    border: 5px solid rgb(5, 29, 124);
+}
+
 section#HanimeTV #pfpIMG{
     left: 8%;
     bottom: -20px;
     width: 35%;
-    border: 5px solid rgb(41, 46, 89);
+    border: 5px solid rgb(19, 26, 95);
     border-radius: 10%;
+}
+
+section#Artists #pfpIMG{
+    border: 5px solid rgb(132, 3, 87);
 }
 
 #Name{
@@ -87,7 +103,22 @@ section#HanimeTV #pfpIMG{
     font-size: 140%;
     font-weight: bold;
     text-decoration: none;
+}
+
+section#PornHub #Name{
     color: rgb(77, 59, 217);
+}
+
+section#Leaks #Name{
+    color: rgb(20, 48, 159);
+}
+
+section#HanimeTV #Name{
+    color: rgb(49, 60, 155);
+}
+
+section#Artists #Name{
+    color: rgb(145, 24, 102);
 }
 
 @media (max-width: 1000px) {
