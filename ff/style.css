@@ -38,14 +38,15 @@ section{
     row-gap: 60px;
 }
 
-a{
+a, uniqueEvent{
     position: relative;
     bottom: 0px;
     transition: ease-out 0.3s;
 }
 
-a:hover{
+a:hover, uniqueEvent:hover{
     bottom: 5px;
+    cursor: pointer;
 }
 
 #backgroundIMG{
@@ -119,6 +120,10 @@ section#HanimeTV #Name{
 
 section#Artists #Name{
     color: rgb(145, 24, 102);
+}
+
+#Thiccwithaq img{
+    width: 100%;
 }
 
 @media (max-width: 1000px) {
