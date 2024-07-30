@@ -7,13 +7,13 @@ body{
     background-color: rgb(12, 12, 15);
 }
 
-div.wrapper{
+.wrapper{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-div.menu{
+.menu{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -38,22 +38,23 @@ hr{
     transition: all 0.3s ease-in-out;
 }
 
-div.wrapper2{
+.wrapper2{
     display: flex;
     justify-content: center;
 }
 
-div.pages{
+.pages{
     display: flex;
     justify-content: center;
     margin: 50px;
-    width: 90%;
+    height: 100%;
     border: 2px solid rgb(28, 28, 39);
     border-radius: 50px;
 }
 
 section{
     padding: 50px;
+    display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 20px;
     row-gap: 60px;
@@ -75,19 +76,19 @@ a:hover, uniqueEvent:hover{
     border-radius: 10px;
 }
 
-section#PornHub #backgroundIMG{
+#PornHub #backgroundIMG{
     border: 1px solid rgb(144, 93, 0);
 }
 
-section#Leaks #backgroundIMG{
+#Leaks #backgroundIMG{
     border: 1px solid rgb(222, 17, 171);
 }
 
-section#HanimeTV #backgroundIMG{
+#HanimeTV #backgroundIMG{
     border: 1px solid rgb(80, 80, 80);
 }
 
-section#Artists #backgroundIMG{
+#Artists #backgroundIMG{
     border: 1px solid rgb(13, 91, 79);
 }
 
@@ -99,15 +100,15 @@ section#Artists #backgroundIMG{
     border-radius: 50%;
 }
 
-section#PornHub #pfpIMG{
+#PornHub #pfpIMG{
     border: 5px solid rgb(48, 0, 152);
 }
 
-section#Leaks #pfpIMG{
+#Leaks #pfpIMG{
     border: 5px solid rgb(5, 29, 124);
 }
 
-section#HanimeTV #pfpIMG{
+#HanimeTV #pfpIMG{
     left: 8%;
     bottom: -20px;
     width: 30%;
@@ -115,7 +116,7 @@ section#HanimeTV #pfpIMG{
     border-radius: 10%;
 }
 
-section#Artists #pfpIMG{
+#Artists #pfpIMG{
     border: 5px solid rgb(132, 3, 87);
 }
 
@@ -128,20 +129,20 @@ section#Artists #pfpIMG{
     text-decoration: none;
 }
 
-section#PornHub #Name{
+#PornHub #Name{
     color: rgb(77, 59, 217);
 }
 
-section#Leaks #Name{
+#Leaks #Name{
     color: rgb(20, 48, 159);
 }
 
-section#HanimeTV #Name{
+#HanimeTV #Name{
     left: 45%;
     color: rgb(49, 60, 155);
 }
 
-section#Artists #Name{
+#Artists #Name{
     color: rgb(145, 24, 102);
 }
 
@@ -168,5 +169,9 @@ section#Artists #Name{
 
     section{
         grid-template-columns: auto;
+    }
+
+    #backgroundIMG{
+        height: 170px;
     }
 }
