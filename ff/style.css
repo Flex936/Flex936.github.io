@@ -156,7 +156,7 @@ section#Artists #Name{
     }
 
     #backgroundIMG{
-        height: 200px;
+        height: 180px;
     }
     
     #Name{
@@ -168,9 +168,5 @@ section#Artists #Name{
 
     section{
         grid-template-columns: auto;
-    }
-
-    #backgroundIMG{
-        height: 200px;
     }
 }
