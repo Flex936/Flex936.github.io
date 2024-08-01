@@ -19,7 +19,7 @@ function buttonClick(clicked_id) {
             listSections[i].style.display='none'
         }
         else{
-            listSections[i].style.display='grid'
+            listSections[i].style.display='flex'
             hrc.style.marginLeft=i+'00%'
         }
     }
@@ -28,7 +28,7 @@ function buttonClick(clicked_id) {
 function showPics(artist_id) {
     for (let j=0; j < listSections.length;j++){
         if (listSections[j].id == artist_id){
-            listSections[j].style.display='grid'
+            listSections[j].style.display='flex'
         }
     }
     listSections[3].style.display='none'

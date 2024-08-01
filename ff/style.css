@@ -46,16 +46,16 @@ hr{
 .pages{
     display: flex;
     justify-content: center;
-    margin: 50px;
-    height: 100%;
+    margin: 3%;
     border: 2px solid rgb(28, 28, 39);
     border-radius: 50px;
+    min-width: 80%;
 }
 
 section{
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
     column-gap: 20px;
     row-gap: 60px;
 }
@@ -72,7 +72,8 @@ a:hover, uniqueEvent:hover{
 }
 
 #backgroundIMG{
-    height: 220px;
+    max-height: 220px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -85,7 +86,7 @@ a:hover, uniqueEvent:hover{
 }
 
 #HanimeTV #backgroundIMG{
-    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgb(100, 100, 100);
 }
 
 #Artists #backgroundIMG{
@@ -94,9 +95,9 @@ a:hover, uniqueEvent:hover{
 
 #pfpIMG{
     position: absolute;
-    left: 5%;
-    bottom: -30px;
-    width: 40%;
+    left: 4%;
+    bottom: -12%;
+    max-width: 40%;
     border-radius: 50%;
 }
 
@@ -110,9 +111,9 @@ a:hover, uniqueEvent:hover{
 
 #HanimeTV #pfpIMG{
     left: 8%;
-    bottom: -20px;
+    bottom: -10%;
     width: 30%;
-    border: 5px solid rgb(19, 26, 95);
+    border: 5px solid rgb(43, 56, 172);
     border-radius: 10%;
 }
 
@@ -139,7 +140,7 @@ a:hover, uniqueEvent:hover{
 
 #HanimeTV #Name{
     left: 45%;
-    color: rgb(49, 60, 155);
+    color: rgb(89, 105, 212);
 }
 
 #Artists #Name{
@@ -150,28 +151,9 @@ a:hover, uniqueEvent:hover{
     width: 100%;
 }
 
-@media (max-width: 1000px) {
-
-    section{
-        grid-template-columns: auto auto;
-    }
-
-    #backgroundIMG{
-        height: 180px;
-    }
-    
-    #Name{
-        font-size: 120%;
-    }
-}
-
 @media (max-width: 500px) {
 
-    section{
-        grid-template-columns: auto;
-    }
-
-    #backgroundIMG{
-        height: 170px;
+    #Name{
+    font-size: 100%;
     }
 }
