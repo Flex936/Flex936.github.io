@@ -55,7 +55,7 @@ hr{
 section{
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: max(30px, 4%);
     column-gap: 20px;
     row-gap: 60px;
 }

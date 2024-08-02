@@ -13,7 +13,7 @@ const listSections=[document.getElementById('PornHub'),document.getElementById('
 const listButton=[document.getElementById('PHB'),document.getElementById('LSB'),document.getElementById('HTVB'),document.getElementById('ASB'),document.getElementById('SSB')]
 const hrc = document.getElementById('hri')  
 
-function buttonClick(clicked_id) {
+function buttonClick(clicked_id){
     for (let i=0; i < listSections.length;i++){
         if (listSections[i].id[0] != clicked_id.id[0]){
             listSections[i].style.display='none'
@@ -25,7 +25,7 @@ function buttonClick(clicked_id) {
     }
 }
 
-function showPics(artist_id) {
+function showPics(artist_id){
     for (let j=0; j < listSections.length;j++){
         if (listSections[j].id == artist_id){
             listSections[j].style.display='flex'
