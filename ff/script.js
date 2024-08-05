@@ -2,16 +2,20 @@ for (let k=1; k < 635;k++){
     var pics = document.createElement("img")
     try{
         pics.src='artists/thiccwithaq/'+k+'.jpg'
+        pics.style.maxHeight='100%'
+        pics.style.maxWidth='220px'
+        pics.style.borderRadius='10px'
         document.getElementById('Thiccwithaq').appendChild(pics)
-    }catch(gifError){
+    }catch(exceptionVar){
         pics.src='artists/thiccwithaq/'+k+'.gif'
+        pics.style.borderRadius='10px'
         document.getElementById('Thiccwithaq').appendChild(pics)
     }
 }
 
-const listSections=[document.getElementById('PornHub'),document.getElementById('Leaks'),document.getElementById('HanimeTV'),document.getElementById('Artists'),document.getElementById('Sites'),document.getElementById('Thiccwithaq')]
-const listButton=[document.getElementById('PHB'),document.getElementById('LSB'),document.getElementById('HTVB'),document.getElementById('ASB'),document.getElementById('SSB')]
-const hrc = document.getElementById('hri')  
+const listSections=[document.getElementById('PornHub'),document.getElementById('Leaks'),document.getElementById('HanimeTV'),document.getElementById('Artists'),document.getElementById('Thiccwithaq')]
+const listButton=[document.getElementById('PHB'),document.getElementById('LSB'),document.getElementById('HTVB'),document.getElementById('ASB')]
+const hrc = document.getElementById('hri')
 
 function buttonClick(clicked_id){
     for (let i=0; i < listSections.length;i++){
