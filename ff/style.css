@@ -24,6 +24,8 @@ button{
     border: none;
     background-color: transparent;
     color: rgb(142, 142, 170);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button:hover{
@@ -71,29 +73,33 @@ a:hover, uniqueEvent:hover{
     cursor: pointer;
 }
 
-#backgroundIMG{
+.backgroundIMG{
     max-height: 220px;
     max-width: 100%;
     border-radius: 10px;
 }
 
-#PornHub #backgroundIMG{
-    border: 1px solid rgb(144, 93, 0);
+#pornhubIMG{
+    border: 2px solid rgb(144, 93, 0);
 }
 
-#Leaks #backgroundIMG{
-    border: 1px solid rgb(222, 17, 171);
+#leaksIMG{
+    border: 2px solid rgb(222, 17, 171);
 }
 
-#HanimeTV #backgroundIMG{
-    border: 1px solid rgb(100, 100, 100);
+#hanimetvIMG{
+    border: 2px solid rgb(100, 100, 100);
 }
 
-#Artists #backgroundIMG{
-    border: 1px solid rgb(13, 91, 79);
+#artistIMG{
+    border: 2px solid rgb(13, 91, 79);
 }
 
-#pfpIMG{
+#newgroundsIMG{
+    border: 2px solid rgb(203, 25, 87);
+}
+
+.pfpIMG{
     position: absolute;
     left: 4%;
     bottom: -12%;
@@ -101,15 +107,15 @@ a:hover, uniqueEvent:hover{
     border-radius: 50%;
 }
 
-#PornHub #pfpIMG{
+#pornhubPFP{
     border: 5px solid rgb(48, 0, 152);
 }
 
-#Leaks #pfpIMG{
+#leaksPFP{
     border: 5px solid rgb(5, 29, 124);
 }
 
-#HanimeTV #pfpIMG{
+#hanimetvPFP{
     left: 8%;
     bottom: -10%;
     width: 30%;
@@ -117,35 +123,43 @@ a:hover, uniqueEvent:hover{
     border-radius: 10%;
 }
 
-#Artists #pfpIMG{
+#artistsPFP{
     border: 5px solid rgb(132, 3, 87);
 }
 
-#Name{
+#newgroundsPFP{
+    border: 5px solid rgb(255, 207, 87);
+}
+
+.Name{
     position: absolute;
     left: 50%;
-    bottom: 12%;
+    bottom: 13%;
     font-size: 130%;
     margin-right: 1%;
     font-weight: bold;
     text-decoration: none;
 }
 
-#PornHub #Name{
+#pornhubNAME{
     color: rgb(77, 59, 217);
 }
 
-#Leaks #Name{
+#leaksNAME{
     color: rgb(20, 48, 159);
 }
 
-#HanimeTV #Name{
+#hanimetvNAME{
     left: 45%;
     color: rgb(89, 105, 212);
 }
 
-#Artists #Name{
+#artistsNAME{
     color: rgb(145, 24, 102);
+}
+
+#newgroundsNAME{
+    color: rgb(226, 179, 57);
 }
 
 #Thiccwithaq img{

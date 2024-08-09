@@ -13,8 +13,8 @@ for (let k=1; k < 635;k++){
     }
 }
 
-const listSections=[document.getElementById('PornHub'),document.getElementById('Leaks'),document.getElementById('HanimeTV'),document.getElementById('Artists'),document.getElementById('Thiccwithaq')]
-const listButton=[document.getElementById('PHB'),document.getElementById('LSB'),document.getElementById('HTVB'),document.getElementById('ASB')]
+const listSections=[document.getElementById('Porn'),document.getElementById('Leaks'),document.getElementById('Hentai'),document.getElementById('Artists'),document.getElementById('Thiccwithaq')]
+const listButton=[document.getElementById('PB'),document.getElementById('LSB'),document.getElementById('HB'),document.getElementById('ASB')]
 const hrc = document.getElementById('hri')
 
 function buttonClick(clicked_id){
