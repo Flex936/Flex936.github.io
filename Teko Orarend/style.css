@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(33, 33, 38);
+    color: rgb(148, 148, 159);
+    font-size: 140%;
+    font-family: Arial;
+    margin: 40px;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#classes td{
+    height: 50px;
+}
+
+#time{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    left: 0%;
+    font-size: 50%;
+}
+
+td{
+    position: relative;
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    padding: 10px;
+    word-wrap: break-word;
+    border: 3px solid rgb(103, 103, 121);
+}
+
+#terem{
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 55%;
+}
+
+#tanar{
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    font-size: 60%;
+}
+
+#no-padding{
+    padding: 0;
+}
+
+#inside-table, .slider-show{
+    width: 100%;
+    height: 100%;
+}
+
+#inside-table tr, .slider-show tr{
+    border-bottom: 3px solid rgb(103, 103, 121);
+}
+
+#inside-table tr:last-child, .slider-show tr:last-child{
+    border-bottom: none;
+}
+
+#inside-table td, .slider-show td{
+    border: none;
+    height: 50px;
+    border-right: 3px solid rgb(103, 103, 121);
+}
+
+#inside-table td:last-child, .slider-show td:last-child{
+    border: none;
+}
+
+#slider{
+    position: absolute;
+    border: 5px solid rgb(79, 79, 93);
+    left: 15%;
+    top: 12px;
+    background-color: rgb(33, 33, 38);
+    z-index: 1;
+    width: 80px;
+}
+
+#slider:hover{
+    cursor: pointer;
+}
+
+.slider-show{
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.double#slider{
+    width: 160px;
+}
