@@ -1,5 +1,5 @@
 var index = 2
-function details(slider, table){
+function details(slider){
     if (slider.style.width != '130px' && slider.style.width != '260px'){
         if (!slider.classList.contains('double')){
             slider.style.width='130px'
@@ -12,7 +12,7 @@ function details(slider, table){
         slider.style.height='auto'
         slider.style.borderWidth='3px'
         slider.style.zIndex=index
-        document.getElementById(table).style.display='flex'
+        slider.children[0].style.display='flex'
         index++
     }
     else{
@@ -22,11 +22,11 @@ function details(slider, table){
         else{
             slider.style.width='160px'
         }
-        slider.style.height='0px'
-        slider.style.borderWidth='5px'
+        slider.style.height='0'
+        slider.style.borderWidth='6px'
         slider.style.transform='translateX(0px)'
         slider.style.zIndex=1
-        document.getElementById(table).style.display='none'
+        slider.children[0].style.display='none'
     }
     if (index >= 9){
         index=2
