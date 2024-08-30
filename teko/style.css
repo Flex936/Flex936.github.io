@@ -5,8 +5,8 @@
 body{
     background-color: rgb(33, 33, 38);
     color: rgb(148, 148, 159);
-    font-size: 130%; font-family: Arial;
-    padding: 1%;
+    font-size: 125%; font-family: Arial;
+    padding: 2vw;
 }
 
 #out-wrapper{
@@ -22,13 +22,14 @@ table{
     table-layout: fixed;
     text-align: center;
     border-collapse: collapse;
+    overflow: auto;
     width: 1280px;
 }
 
 td{
     position: relative;
     max-width: 100px; height: 100px;
-    padding: 1%;
+    padding: 8px;
     word-break: break-all;
     border: 3px solid rgb(103, 103, 121);
 }
@@ -42,20 +43,11 @@ td{
     bottom: 0.5vw;
     left: 0;
     width: 100%;
-    font-size: 50%;
+    font-size: 55%;
 }
 
 #osztalyok{
     display: none;
-}
-
-#classes div:hover{
-    cursor: pointer;
-}
-
-#classes div table{
-    display: none;
-    justify-content: center;
 }
 
 #classes span{
@@ -67,33 +59,7 @@ td{
 
 #classes span:last-of-type{
     left: unset; right: 7%;
-    font-size: 60%;
-}
-
-#inside-table{
-    padding: 0;
-}
-
-#inside-table table, #classes div{
-    width: 100%; height: 100%;
-}
-
-#inside-table table tr, #classes div tr{
-    border-bottom: 0.2vw solid rgb(103, 103, 121);
-}
-
-#inside-table table tr:last-child, #classes div tr:last-child{
-    border-bottom: none;
-}
-
-#inside-table table td, #classes div td{
-    height: 50px;
-    border: none;
-    border-right: 0.2vw solid rgb(103, 103, 121);
-}
-
-#inside-table table td:last-child, #classes div td:last-child{
-    border: none;
+    font-size: 55%;
 }
 
 #classes div{
@@ -107,10 +73,42 @@ td{
     z-index: 1;
 }
 
-#classes div::before{
-    width: 70%; height: 0;
+#classes div:hover{
+    cursor: pointer;
 }
 
-#classes div::after{
-    width: 100%; height: auto;
+#classes div table{
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+#classes div td{
+    height: 75px;
+}
+
+#inside-table{
+    padding: 0;
+}
+
+#inside-table table{
+    width: 100%; height: 100%;
+}
+
+#inside-table table tr, #classes div tr{
+    border-bottom: 3px solid rgb(103, 103, 121);
+}
+
+#inside-table table tr:last-child, #classes div tr:last-child{
+    border-bottom: none;
+}
+
+#inside-table table td{
+    height: 50px;
+    border: none;
+    border-right: 3px solid rgb(103, 103, 121);
+}
+
+#inside-table table td:last-child, #classes div td:last-child{
+    border: none;
 }

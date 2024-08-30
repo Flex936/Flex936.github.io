@@ -1,6 +1,6 @@
 function details(slider){
     if (slider.style.width != '110%'){
-        slider.style.cssText="width: 110%; height: auto; transform: translateX(-6.5%); border-width: 3px; z-index: 1;"
+        slider.style.cssText="width: 110%; height: auto; transform: translateX(-6.5%); border-width: 3px; z-index: 2;"
         slider.children[0].style.display='flex'
     }
     else{
