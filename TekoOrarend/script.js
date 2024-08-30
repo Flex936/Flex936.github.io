@@ -1,34 +1,10 @@
-var index = 2
 function details(slider){
-    if (slider.style.width != '130px' && slider.style.width != '260px'){
-        if (!slider.classList.contains('double')){
-            slider.style.width='130px'
-        slider.style.transform='translateX(-25px)'
-        }
-        else{
-            slider.style.width='260px'
-        slider.style.transform='translateX(-50px)'
-        }
-        slider.style.height='auto'
-        slider.style.borderWidth='3px'
-        slider.style.zIndex=index
+    if (slider.style.width != '110%'){
+        slider.style.cssText="width: 110%; height: auto; transform: translateX(-6.5%); border-width: 3px; z-index: 1;"
         slider.children[0].style.display='flex'
-        index++
     }
     else{
-        if (!slider.classList.contains('double')){
-            slider.style.width='80px'
-        }
-        else{
-            slider.style.width='160px'
-        }
-        slider.style.height='0'
-        slider.style.borderWidth='6px'
-        slider.style.transform='translateX(0px)'
-        slider.style.zIndex=1
+        slider.style.cssText="width: 70%; height: 0; transform: translateX(0); border-width: 6px; z-index: 1;"
         slider.children[0].style.display='none'
-    }
-    if (index >= 9){
-        index=2
     }
 }
