@@ -6,31 +6,25 @@ body{
     background-color: rgb(33, 33, 38);
     color: rgb(148, 148, 159);
     font-size: 125%; font-family: Arial;
-    padding: 2vw;
-}
-
-#out-wrapper{
-    display: flex;
-    justify-content: center;
+    padding: 2%;
 }
 
 #wrapper{
-    width: auto;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
 }
 
 table{
     table-layout: fixed;
     text-align: center;
     border-collapse: collapse;
-    overflow: auto;
-    width: 1280px;
 }
 
 td{
     position: relative;
-    max-width: 100px; height: 100px;
+    min-width: 100px; max-width: 100px; height: 100px;
     padding: 8px;
-    word-break: break-all;
     border: 3px solid rgb(103, 103, 121);
 }
 
@@ -40,7 +34,7 @@ td{
 
 #time span{
     position: absolute;
-    bottom: 0.5vw;
+    bottom: 8%;
     left: 0;
     width: 100%;
     font-size: 55%;
