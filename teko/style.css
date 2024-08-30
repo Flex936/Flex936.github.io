@@ -12,7 +12,6 @@ body{
 #wrapper{
     display: flex;
     justify-content: center;
-    overflow-x: auto;
 }
 
 table{
@@ -104,4 +103,16 @@ td{
 
 #inside-table table td:last-child, #classes div td:last-child{
     border: none;
+}
+
+@media (max-width: 1200px){
+    #orarend{
+        zoom: 0.5;
+    }
+}
+
+@media (max-width: 600px){
+    #orarend{
+        zoom: 0.25;
+    }
 }
