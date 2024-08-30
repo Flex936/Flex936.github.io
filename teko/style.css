@@ -5,27 +5,31 @@
 body{
     background-color: rgb(33, 33, 38);
     color: rgb(148, 148, 159);
-    font-size: 140%; font-family: Arial;
-    margin: 2%;
+    font-size: 130%; font-family: Arial;
+    padding: 1%;
+}
+
+#out-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 #wrapper{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    width: auto;
 }
 
 table{
     table-layout: fixed;
     text-align: center;
     border-collapse: collapse;
+    width: 1280px;
 }
 
 td{
     position: relative;
-    min-width: 100px; max-width: 100px; height: 100px;
-    padding: 8px;
-    word-wrap: break-word;
+    max-width: 100px; height: 100px;
+    padding: 1%;
+    word-break: break-all;
     border: 3px solid rgb(103, 103, 121);
 }
 
@@ -35,8 +39,8 @@ td{
 
 #time span{
     position: absolute;
-    bottom: 8px;
-    left: 0%;
+    bottom: 0.5vw;
+    left: 0;
     width: 100%;
     font-size: 50%;
 }
@@ -75,7 +79,7 @@ td{
 }
 
 #inside-table table tr, #classes div tr{
-    border-bottom: 3px solid rgb(103, 103, 121);
+    border-bottom: 0.2vw solid rgb(103, 103, 121);
 }
 
 #inside-table table tr:last-child, #classes div tr:last-child{
@@ -85,7 +89,7 @@ td{
 #inside-table table td, #classes div td{
     height: 50px;
     border: none;
-    border-right: 3px solid rgb(103, 103, 121);
+    border-right: 0.2vw solid rgb(103, 103, 121);
 }
 
 #inside-table table td:last-child, #classes div td:last-child{
