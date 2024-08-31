@@ -27,6 +27,11 @@ td{
     border: 3px solid rgb(103, 103, 121);
 }
 
+span{
+    position: absolute;
+    font-size: 55%;
+}
+
 #class{
     height: 50px;
     padding: 5px;
@@ -37,80 +42,6 @@ td{
 #time td{
     height: 50px;
     font-size: 95%;
-}
-
-#time span{
-    position: absolute;
-    bottom: 8%;
-    left: 0;
-    width: 100%;
-    font-size: 55%;
-}
-
-.schedule{
-    display: none;
-}
-
-.schedule span{
-    position: absolute;
-    bottom: 10%;
-    left: 7%;
-    font-size: 55%;
-}
-
-.schedule span:last-of-type{
-    left: unset; right: 7%;
-}
-
-.schedule div{
-    position: absolute;
-    top: 12%;
-    left: 0; right: 0;
-    width: 70%;
-    margin-left: auto; margin-right: auto;
-    border: 6px solid rgb(79, 79, 93);
-    background-color: rgb(33, 33, 38);
-}
-
-.schedule div{
-    cursor: pointer;
-}
-
-.schedule div table{
-    display: none;
-    justify-content: center;
-}
-
-.schedule div td{
-    height: 60px;
-}
-
-#inside-table{
-    padding: 0;
-    font-size: 90%;
-}
-
-#inside-table table{
-    width: 100%;
-    font-size: 95%;
-}
-
-#inside-table tr, .schedule div tr{
-    border-bottom: 3px solid rgb(103, 103, 121);
-}
-
-#inside-table tr:last-child, .schedule div tr:last-child{
-    border-bottom: none;
-}
-
-#inside-table td{
-    height: 40px;
-    border: none;
-    border-right: 3px solid rgb(103, 103, 121);
-}
-
-#inside-table table td:last-child, .schedule div td:last-child{
-    border: none;
 }
 
 #time div{
@@ -131,6 +62,70 @@ td{
 #time div td:hover{
     background-color: rgb(120, 120, 147);
     color: rgb(43, 43, 58);
+}
+
+#time div td{
+    border-bottom: 3px solid rgb(103, 103, 121);
+}
+
+#time span{
+    bottom: 8%; left: 0;
+    width: 100%;
+}
+
+.schedule{
+    display: none;
+}
+
+.schedule span{
+    bottom: 10%; left: 7%;
+}
+
+.schedule span:last-of-type{
+    left: unset; right: 7%;
+}
+
+.schedule div{
+    position: absolute;
+    top: 12%;
+    left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    width: 70%;
+    border: 6px solid rgb(79, 79, 93);
+    background-color: rgb(33, 33, 38);
+    cursor: pointer;
+}
+
+.schedule div table{
+    display: none;
+    justify-content: center;
+}
+
+.schedule div td{
+    height: 55px;
+}
+
+td:has(table){
+    padding: 0;
+    font-size: 85%;
+}
+
+td:has(table) table{
+    width: 100%;
+}
+
+td:has(table) tr:not(:last-child){
+    border-bottom: 3px solid rgb(103, 103, 121);
+}
+
+td:has(table) td{
+    height: 40px;
+    border: none;
+    border-right: 3px solid rgb(103, 103, 121);
+}
+
+td:has(table) td:last-child{
+    border: none;
 }
 
 
