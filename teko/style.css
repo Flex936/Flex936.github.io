@@ -1,9 +1,12 @@
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body{
     background-color: rgb(33, 33, 38);
     color: rgb(148, 148, 159);
     font-size: 135%; font-family: Arial;
     padding: 1%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 #wrapper{
