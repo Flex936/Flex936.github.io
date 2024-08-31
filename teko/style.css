@@ -1,8 +1,8 @@
 body{
     background-color: rgb(33, 33, 38);
     color: rgb(148, 148, 159);
-    font-size: 125%; font-family: Arial;
-    padding: 2%;
+    font-size: 135%; font-family: Arial;
+    padding: 1%;
 }
 
 #wrapper{
@@ -18,13 +18,21 @@ table{
 
 td{
     position: relative;
-    min-width: 100px; max-width: 100px; height: 100px;
+    min-width: 90px; max-width: 90px; height: 100px;
     padding: 8px;
     border: 3px solid rgb(103, 103, 121);
 }
 
+#class{
+    height: 50px;
+    padding: 5px;
+    font-size: 150%;
+    background-color: rgb(28, 28, 33);
+}
+
 #time td{
     height: 50px;
+    font-size: 95%;
 }
 
 #time span{
@@ -35,18 +43,22 @@ td{
     font-size: 55%;
 }
 
-#classes span{
+.schedule{
+    display: none;
+}
+
+.schedule span{
     position: absolute;
     bottom: 10%;
     left: 7%;
     font-size: 55%;
 }
 
-#classes span:last-of-type{
+.schedule span:last-of-type{
     left: unset; right: 7%;
 }
 
-#classes div{
+.schedule div{
     position: absolute;
     top: 12%;
     left: 0; right: 0;
@@ -56,53 +68,94 @@ td{
     background-color: rgb(33, 33, 38);
 }
 
-#classes div:hover{
+.schedule div{
     cursor: pointer;
 }
 
-#classes div table{
+.schedule div table{
     display: none;
     justify-content: center;
 }
 
-#classes div td{
-    height: 75px;
+.schedule div td{
+    height: 60px;
 }
 
 #inside-table{
     padding: 0;
+    font-size: 90%;
 }
 
 #inside-table table{
     width: 100%;
+    font-size: 95%;
 }
 
-#inside-table tr, #classes div tr{
+#inside-table tr, .schedule div tr{
     border-bottom: 3px solid rgb(103, 103, 121);
 }
 
-#inside-table tr:last-child, #classes div tr:last-child{
+#inside-table tr:last-child, .schedule div tr:last-child{
     border-bottom: none;
 }
 
 #inside-table td{
-    height: 50px;
+    height: 40px;
     border: none;
     border-right: 3px solid rgb(103, 103, 121);
 }
 
-#inside-table table td:last-child, #classes div td:last-child{
+#inside-table table td:last-child, .schedule div td:last-child{
     border: none;
 }
 
-@media (max-width: 1200px){
+#time div{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+    font-weight: bold;
+    background-color: rgb(43, 43, 58);
+    color: rgb(120, 120, 147);
+    cursor: pointer;
+}
+
+#time div td{
+    display: none;
+    border-top: none; border-left: none;
+}
+
+#time div td:hover{
+    background-color: rgb(120, 120, 147);
+    color: rgb(43, 43, 58);
+}
+
+
+@media (min-width: 0px){
+    #wrapper:first-child{
+        zoom: 0.3;
+    }
+}
+
+@media (min-width: 620px){
+    #wrapper:first-child{
+        zoom: 0.4;
+    }
+}
+
+@media (min-width: 620px){
     #wrapper:first-child{
         zoom: 0.5;
     }
 }
 
-@media (max-width: 600px){
+@media (min-width: 1025px){
     #wrapper:first-child{
-        zoom: 0.25;
+        zoom: 0.7;
+    }
+}
+
+@media (min-width: 1370px){
+    #wrapper:first-child{
+        zoom: 1;
     }
 }

@@ -7,9 +7,17 @@
 </head>
 <body>
     <div id="wrapper">
-        <table>
+        <table style="display: table;">
+            <tr><td colspan="11" id="class">12.a</td></tr>
             <tr id="time">
-                <td>12 a</td>
+                <td><div onclick="listClasses(this)">
+                        <table>
+                            <tr><td style="display: table-cell;">Osztályok</td></tr>
+                            <tr onclick="switchSchedule('12.a')"><td>12.a</td></tr>
+                            <tr onclick="switchSchedule('12.d')"><td>12.d</td></tr>
+                        </table>
+                    </div>
+                </td>
                 <td>0<span>7:15-8:00</span></td>
                 <td>1<span>8:05-8:50</span></td>
                 <td>2<span>9:00-9:45</span></td>
@@ -21,7 +29,8 @@
                 <td>8<span>14:25-15:10</span></td>
                 <td>9<span>15:15-16:00</span></td>
             </tr>
-            <tbody id="classes">
+            <!--12.a-->
+            <tbody id="12.a" class="schedule" style="display: table-row-group;">
                 <tr>
                     <td>Hétfő</td>
                     <td>Államp. Ism.<span>Szak 1</span><span>NL</span></td>
@@ -185,6 +194,163 @@
                         </table>
                     </div></td>
                     <td>Töri<span>Szak 1</span><span>NL</span></td>
+                    <td colspan="3"></td>
+                </tr>
+            </tbody>
+            <!--12.d-->
+            <tbody id="12.d" class="schedule">
+                <tr>
+                    <td>Hétfő</td>
+                    <td>Pénz. Váll. Ism.<span>Szak 1</span><span>NL</span></td>
+                    <td>Tesi<span>Sport 2</span><span>SzM</span></td>
+                    <td>Nyelv<div onclick="details(this)">
+                        <table>
+                            <tr><td>I. Angol<span>Nylevi 4</span><span>JLÁ</span></td></tr>
+                            <tr><td>II. Angol<span>Nyelvi 3</span><span>TK</span></td></tr>
+                            <tr><td>III. Angol<span>Info Labor</span><span>JPA</span></td></tr>
+                            <tr><td>IV. Angol<span>Nyelvi 6</span><span>MVK</span></td></tr>
+                            <tr><td>V. Angol<span>Nyelvi 2</span><span>TSzÉ</span></td></tr>
+                            <tr><td>I. Német<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                            <tr><td>II. Német<span>Nyelvi 5</span><span>SMAT</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td id="inside-table">
+                        <table>
+                            <tr><td>Matek I.<span>Művészeti</span><span>ZT</span></td></tr>
+                            <tr><td>Matek II.<span>Matek 3</span><span>MI</span></td></tr>
+                        </table>
+                    </td>
+                    <td colspan="2">Magyar<span>Magyar</span><span>BFK</span></td>
+                    <td></td>
+                    <td>III. Angol<span>Info Labor</span><span>JPA</span></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Kedd</td>
+                    <td></td>
+                    <td>Államp. Ism.<span>Szak 1</span><span>NL</span></td>
+                    <td>Nyelv??<div onclick="details(this)">
+                        <table>
+                            <tr><td>Angol<span>Nyelvi 2</span><span>TSz</span></td></tr>
+                            <tr><td>Német I.<span>Matek 3</span><span>MI</span></td></tr>
+                            <tr><td>Német II.<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td>MéM<span>Művészeti</span><span>SE</span></td>
+                    <td>Magyar<span>Magyar</span><span>BFK</span></td>
+                    <td></td>
+                    <td>Töri<span>Szak 1</span><span>NL</span></td>
+                    <td>Tesi<span>Sport 1</span><span>SzM</span></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Szerda</td>
+                    <td></td>
+                    <td>Töri<span>Szak 1</span><span>NL</span></td>
+                    <td>Nyelv??<div onclick="details(this)">
+                        <table>
+                            <tr><td>Angol<span>Nyelvi 2</span><span>TSz</span></td></tr>
+                            <tr><td>Német I.<span>Matek 3</span><span>MI</span></td></tr>
+                            <tr><td>Német II.<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td colspan="2">EzMegMi<div onclick="details(this)">
+                        <table>
+                            <tr><td>Biosz<span>Töri</span><span>SzM</span></td></tr>
+                            <tr><td>Földrajz<span>Szak 2</span><span>FnéBM</span></td></tr>
+                            <tr><td>Kémia<span>Fizika</span><span>SR</span></td></tr>
+                            <tr><td>Gazdasági Ism.<span>Matek 1</span><span>BnéMJ</span></td></tr>
+                            <tr><td>Digititális Kult.<span>Info2</span><span>KHT</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td id="inside-table">
+                        <table>
+                            <tr><td>Matek I.<span>Művészeti</span><span>ZT</span></td></tr>
+                            <tr><td>Matek II.<span>Matek 3</span><span>MI</span></td></tr>
+                        </table>
+                    </td>
+                    <td>Tesi<span>Sport C.</span><span>SzM</span></td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>Csütörtök</td>
+                    <td>Nyelv<div onclick="details(this)">
+                        <table>
+                            <tr><td>I. Angol<span>Nylevi 4</span><span>JLÁ</span></td></tr>
+                            <tr><td>II. Angol<span>Nyelvi 3</span><span>TK</span></td></tr>
+                            <tr><td><span></td></tr>
+                            <tr><td>IV. Angol<span>Nyelvi 6</span><span>MVK</span></td></tr>
+                            <tr><td>V. Angol<span>Nyelvi 2</span><span>TSzÉ</span></td></tr>
+                            <tr><td>I. Német<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                            <tr><td>II. Német<span>Nyelvi 5</span><span>SMAT</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td>Magyar<span>Magyar</span><span>BFK</span></td>
+                    <td id="inside-table">
+                        <table>
+                            <tr><td>Matek I.<span>Művészeti</span><span>ZT</span></td></tr>
+                            <tr><td>Matek II.<span>Matek 3</span><span>MI</span></td></tr>
+                        </table>
+                    </td>
+                    <td>Tesi<span>Sport 1</span><span>SzM</span></td>
+                    <td colspan="2">Fakt<div onclick="details(this)">
+                        <table>
+                            <tr><td>E. Matek<span>Matek 1</span><span>AZs</span></td></tr>
+                            <tr><td>K. Matek<span>Matek 4</span><span>SzJ</span></td></tr>
+                            <tr><td>E. Töri<span>Szak 1</span><span>NL</span></td></tr>
+                            <tr><td>K. Töri<span>Töri</span><span>KH</span></td></tr>
+                            <tr><td>Magyar<span>Közg 1</span><span>BFB</span></td></tr>
+                            <tr><td>Angol<span>Nyelvi 4</span><span>JLÁ</span></td></tr>
+                            <tr><td>Német<span>Nyelvi 1</span><span>ZSÁ</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td></td>
+                    <td colspan="2">Hittan<div onclick="details(this)">
+                        <table>
+                            <tr><td>I. Hittan<span>Szak 2</span><span>BT</span></td></tr>
+                            <tr><td>II. Hittan<span>Közg 1</span><span>GyP</span></td></tr>
+                            <tr><td>III. Hittan<span>Magyar</span><span>IP</span></td></tr>
+                            <tr><td>IV. Hittan<span>Művészeti</span><span>SEE</span></td></tr>
+                            <tr><td>V. Hittan<span>Társi</span><span>FT</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Péntek</td>
+                    <td id="inside-table">
+                        <table>
+                            <tr><td>Matek I.<span>Művészeti</span><span>ZT</span></td></tr>
+                            <tr><td>Matek II.<span>Matek 3</span><span>MI</span></td></tr>
+                        </table>
+                    </td>
+                    <td>Nyelv<div onclick="details(this)">
+                        <table>
+                            <tr><td>I. Angol<span>Nylevi 4</span><span>JLÁ</span></td></tr>
+                            <tr><td>II. Angol<span>Nyelvi 3</span><span>TK</span></td></tr>
+                            <tr><td>III. Angol<span>Info Labor</span><span>JPA</span></td></tr>
+                            <tr><td>IV. Angol<span>Nyelvi 6</span><span>MVK</span></td></tr>
+                            <tr><td>V. Angol<span>Nyelvi 2</span><span>TSzÉ</span></td></tr>
+                            <tr><td>I. Német<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                            <tr><td>II. Német<span>Nyelvi 5</span><span>SMAT</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td>Töri<span>Szak 1</span><span>NL</span></td>
+                    <td>Nyelv??<div onclick="details(this)">
+                        <table>
+                            <tr><td>Angol<span>Nyelvi 2</span><span>TSz</span></td></tr>
+                            <tr><td>Német I.<span>Matek 3</span><span>MI</span></td></tr>
+                            <tr><td>Német II.<span>Nyelvi 1</span><span>ZsÁ</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td>Ofői<span>Matek 1</span><span>KHT</span></td>
+                    <td>Nyelv<div onclick="details(this)">
+                        <table>
+                            <tr><td>Angol +<span>Nyelvi 2</span><span>TSz</span></td></tr>
+                            <tr><td>Német I. +<span>Matek 3</span><span>MI</span></td></tr>
+                        </table>
+                    </div></td>
+                    <td>Tesi<span>Sport C.</span><span>SzM</span></td>
                     <td colspan="3"></td>
                 </tr>
             </tbody>
