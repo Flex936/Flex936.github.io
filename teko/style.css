@@ -3,10 +3,8 @@ html {
 }
 
 body {
-  /*background-color: rgb(33, 33, 38);*/
-  background-color: rgb(206, 206, 222);
-  /*color: rgb(148, 148, 159);*/
-  color: rgb(56, 56, 61);
+  background-color: rgb(33, 33, 38);
+  color: rgb(148, 148, 159);
   font-size: 135%;
   font-family: Arial;
   padding: 1%;
@@ -41,8 +39,7 @@ span {
   height: 50px;
   padding: 5px;
   font-size: 150%;
-  /*background-color: rgb(28, 28, 33);*/
-  background-color: rgb(207, 207, 235);
+  background-color: rgb(28, 28, 33);
 }
 
 #time td {
@@ -56,10 +53,8 @@ span {
   left: 0;
   z-index: 2;
   font-weight: bold;
-  /*background-color: rgb(43, 43, 58);*/
-  background-color: rgb(199, 199, 232);
-  /*color: rgb(120, 120, 147);*/
-  color: rgb(66, 66, 73);
+  background-color: rgb(43, 43, 58);
+  color: rgb(120, 120, 147);
   cursor: pointer;
 }
 
@@ -70,15 +65,12 @@ span {
 }
 
 #time div td:hover {
-  /*background-color: rgb(120, 120, 147);*/
-  background-color: rgb(66, 66, 73);
-  /*color: rgb(43, 43, 58);*/
-  color: rgb(199, 199, 232);
+  background-color: rgb(120, 120, 147);
+  color: rgb(43, 43, 58);
 }
 
 #time div td {
-  /*border-bottom: 3px solid rgb(103, 103, 121);*/
-  border-bottom: 3px solid rgb(154, 154, 174);
+  border-bottom: 3px solid rgb(103, 103, 121);
 }
 
 #time span {
@@ -109,10 +101,8 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  /*border-bottom: 3px solid rgb(103, 103, 121);*/
-  border-bottom: 6px solid rgb(154, 154, 174);
-  /*background-color: rgb(33, 33, 38);*/
-  background-color: rgb(206, 206, 222);
+  border-bottom: 3px solid rgb(103, 103, 121);
+  background-color: rgb(33, 33, 38);
   cursor: pointer;
 }
 
