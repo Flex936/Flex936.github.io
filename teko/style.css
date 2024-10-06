@@ -5,53 +5,47 @@ html {
 body {
   background-color: rgb(33, 33, 38);
   color: rgb(148, 148, 159);
-  font-size: 135%;
+  font-size: 1.3rem;
   font-family: Arial;
-  padding: 1%;
-}
-
-#wrapper {
-  display: flex;
-  justify-content: center;
+  margin-right: auto;
 }
 
 table {
   table-layout: fixed;
   text-align: center;
   border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 td {
   position: relative;
-  min-width: 90px;
-  max-width: 90px;
-  height: 100px;
-  padding: 8px;
-  border: 3px solid rgb(103, 103, 121);
+  min-width: 6rem;
+  max-width: 6rem;
+  height: 6rem;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(103, 103, 121);
 }
 
 span {
   position: absolute;
-  font-size: 55%;
+  font-size: 0.55em;
 }
 
 #class {
-  height: 50px;
-  padding: 5px;
-  font-size: 150%;
-  background-color: rgb(28, 28, 33);
+  height: 3rem;
+  font-size: 1.5em;
+  background-color: rgb(28, 28, 31);
 }
 
 #time td {
-  height: 50px;
-  font-size: 95%;
+  height: 3rem;
 }
 
 #time div {
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 2;
+  z-index: 1;
   font-weight: bold;
   background-color: rgb(43, 43, 58);
   color: rgb(120, 120, 147);
@@ -61,16 +55,13 @@ span {
 #time div td {
   display: none;
   border-top: none;
+  border-bottom: 0.2rem solid rgb(103, 103, 121);
   border-left: none;
 }
 
 #time div td:hover {
   background-color: rgb(120, 120, 147);
   color: rgb(43, 43, 58);
-}
-
-#time div td {
-  border-bottom: 3px solid rgb(103, 103, 121);
 }
 
 #time span {
@@ -95,13 +86,13 @@ span {
 
 .schedule div {
   position: absolute;
-  top: 12%;
-  left: 0;
-  right: 0;
   margin-left: auto;
   margin-right: auto;
+  top: 12%;
+  right: 0;
+  left: 0;
   width: 70%;
-  border-bottom: 3px solid rgb(103, 103, 121);
+  border: 0.2rem solid rgb(103, 103, 121);
   background-color: rgb(33, 33, 38);
   cursor: pointer;
 }
@@ -112,58 +103,34 @@ span {
 }
 
 .schedule div td {
-  height: 55px;
+  height: 3.5rem;
+  border: none;
+  border-bottom: 0.2rem solid rgb(103, 103, 121);
+}
+
+div tr:last-child td {
+  border-bottom: none;
 }
 
 td:has(table) {
   padding: 0;
-  font-size: 85%;
+  font-size: 0.85em;
 }
 
-td:has(table) table {
+td > table {
   width: 100%;
 }
 
-td:has(table) tr:not(:last-child) {
-  border-bottom: 3px solid rgb(103, 103, 121);
+td > table tr:first-child {
+  border-bottom: 0.2rem solid rgb(103, 103, 121);
 }
 
-td:has(table) td {
-  height: 40px;
+td > table td {
+  height: 2.5rem;
   border: none;
-  border-right: 3px solid rgb(103, 103, 121);
+  border-right: 0.2rem solid rgb(103, 103, 121);
 }
 
-td:has(table) td:last-child {
-  border: none;
-}
-
-@media (min-width: 0px) {
-  #wrapper:first-child {
-    zoom: 0.3;
-  }
-}
-
-@media (min-width: 620px) {
-  #wrapper:first-child {
-    zoom: 0.4;
-  }
-}
-
-@media (min-width: 620px) {
-  #wrapper:first-child {
-    zoom: 0.5;
-  }
-}
-
-@media (min-width: 1025px) {
-  #wrapper:first-child {
-    zoom: 0.7;
-  }
-}
-
-@media (min-width: 1370px) {
-  #wrapper:first-child {
-    zoom: 1;
-  }
+td > table td:last-child {
+  border-right: none;
 }
