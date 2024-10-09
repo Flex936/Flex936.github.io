@@ -79,11 +79,6 @@ span {
   left: 7%;
 }
 
-.schedule span:last-of-type {
-  left: unset;
-  right: 7%;
-}
-
 .schedule div {
   position: absolute;
   margin-left: auto;
