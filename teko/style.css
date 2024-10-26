@@ -6,6 +6,7 @@ body {
   background-color: rgb(33, 33, 38);
   color: rgb(148, 148, 159);
   font-size: 1.3rem;
+  padding: 2rem;
   font-family: Arial;
   margin-right: auto;
 }
@@ -15,6 +16,7 @@ table {
   text-align: center;
   border-collapse: collapse;
   margin-right: auto;
+  scale: calc(200vw / 1920);
   margin-left: auto;
 }
 
